@@ -1,0 +1,102 @@
+body,html{
+                height:100%;
+                padding:20px,20px,20px,20px;
+            }
+            .parallax{
+                height: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                
+            }
+            .pull-right a{
+                text-decoration: none;
+                color: white;
+                float: right;
+            }
+            footer{
+                background-color: #333;
+                height: 5%;
+                padding: 10px;
+            }
+            .copy{
+                color: white;
+            }
+            .navbar-wrapper {
+                position: absolute;
+                top:-3%;
+                right: 0;
+                left: 0;
+                z-index: 10;
+                margin-top: 20px;
+                margin-bottom: -90px;
+                height: 5%;
+      
+            }
+            h1 {
+                position:relative;
+                display:inline;
+                color: white;
+            }
+            .nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                height: 50px;
+            }
+
+            li {
+                float: right;
+            }
+            .brand{
+                float: left;
+                text-decoration: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding-right:16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #111;
+            }
+            .tab {
+                overflow: hidden; 
+                padding: 20px,20px,20px,20px;
+                background-color: #FFF;
+                margin-top: -200px;
+                opacity:1;
+            }
+            .tab-image {
+                margin-top: 0px; 
+            }
+            .tab-image.pull-left {
+                margin-right: 40px;
+            }
+            .tab-image.pull-right {
+                margin-left: 40px;
+            }   
+            .tab-heading {
+                font-size: 50px;
+                font-weight: 300;
+                line-height: 1;
+                letter-spacing: -1px;
+            }
+            .lead{
+                text-align: justify;
+            }
+            .video-left1{
+                margin-left: 200px;
+            };
+            .video-right1{
+                margin-right: 150px;
+                padding-left: 50px;
+            };
+            

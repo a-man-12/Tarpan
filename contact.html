@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>संपर्क</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script type="text/javascript">
+            function validateForm(){
+                var x=document.forms["myform"]["name"].value;
+                if(x==""){
+                    alert("First Name must be filled");
+                    return false;
+                }
+                x=document.forms["myform"]["surname"].value;
+                if(x==""){
+                    alert("Last Name must be filled");
+                    return false;
+                }
+                x=document.forms["myform"]["email"].value;
+                if(x==""){
+                    alert("Email must be filled");
+                    return false;
+                }
+                x=document.forms["myform"]["address"].value;
+                if(x==""){
+                    alert("Address must be filled");
+                    return false;
+                }
+                x=document.forms["myform"]["message"].value;
+                if(x==""){
+                    alert("Message must be filled");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="navbar-wrapper">
+            <ul class="nav">
+                <li class="brand"><a href="index.html"><h1>तर्पण </h1></a></li>
+                <li><a href="contact.html">संपर्क करें</a></li></li>
+                <li><a href="about.html">हमें जानिये</a></li>
+                <li><a href="video.html">वीडियो गैलरी</a></li>
+                <li ><a href="poet.html">कवि</a></li>
+                <li><a href="index.html">मुख्य पृष्ठ</a></li>
+            </ul>
+        </div><br><br><br>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <h1>संपर्क प्रपत्र</h1>
+                    <form id="contact-form" name="myform" method="post" action="" onsubmit="return validateForm()" role="form">
+                        <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">प्रथम नाम *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="कृपया अपना प्रथम नाम प्रविष्ट करें *">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">अंतिम नाम *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="कृपया अपना अंतिम नाम प्रविष्ट करें *">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">ईमेल *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="कृपया अपना ईमेल प्रविष्ट करें *">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">दूरभाष संख्या </label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="कृपया अपना दूरभाष संख्या प्रविष्ट करें">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">पता *</label>
+                    <textarea id="form_message" name="address" class="form-control" placeholder="कृपया अपना पता प्रविष्ट करें *" rows="5"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">संदेश *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="मेरे लिए संदेश *" rows="10"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="संदेश भेजें">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> इन क्षेत्रों की आवश्यकता है।</p>
+            </div>
+        </div>
+    </div>
+                    </form> 
+
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+        <p class="pull-right"><b><a href="#">वापस ऊपर</a></b></p>
+        <p class="copy"><b><em>&copy; asks</em></b></p>
+      </footer>
+    </body>
+</html>
